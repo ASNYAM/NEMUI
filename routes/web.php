@@ -14,4 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/ireul/{id}', 'IreulController@show');
+Route::resource('ireuls','IreulController', ['except' => ['edit', 'destroy', 'update']]);
+Route::post('ireuls/{id}/result', 'IreulController@result');
