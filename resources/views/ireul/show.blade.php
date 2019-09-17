@@ -38,7 +38,7 @@ Drink MAGI
 </p>
 <p>
 <form role="form" method="post" action="/ireuls/1/result">
-Q1. 味は？
+Q1. {{ $ireul->q1_title }}
 </p>
 <p>
 
@@ -49,7 +49,7 @@ Q1. 味は？
 </div>
 </p>
 <p>
-Q2. 後味は？
+Q2. {{ $ireul->q2_title }}
 </p>
 <p>
 <div class="row btn_group" id="second">
@@ -59,7 +59,7 @@ Q2. 後味は？
 </div>
 </p>
 <p>
-Q3. 存在は？
+Q3. {{ $ireul->q3_title }}
 </p>
 <p>
 <div class="row btn_group" id="third">

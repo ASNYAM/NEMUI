@@ -16,6 +16,9 @@ class CreateIroulsTable extends Migration
         Schema::create('irouls', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name')->nullable(false);
+            $table->string('q1_title')->nullable(false);
+            $table->string('q2_title')->nullable(false);
+            $table->string('q3_title')->nullable(false);
             $table->string('q1_plus')->nullable(false);
             $table->string('q1_minus')->nullable(false);
             $table->string('q2_plus')->nullable(false);
