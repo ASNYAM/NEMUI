@@ -6,11 +6,31 @@ Drink MAGI
 </title>
 <!-- bootstrap CSS-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+<style>
+.btn_selectable
+{
+    border:1px solid gray;
+    border-radius: 3px;
+    color:gray;
+    box-sizing: content-box;
+    margin: 0 3px 0 3px;
+    padding : 0;
+    text-align: center;
+}
+.btn_active{
+    background-color: gray;
+    color: white;
+}
+.btn_selectable label{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+</style>
 </head>
-<body>
-<p>
-<h1>あなたにおすすめの飲み物を解析します</h1>
+<body class="container">
+<p class="text-center">
+あなたにおすすめの飲み物を解析します
 </p>
 <p>
 <br>これからいくつかの質問に答えていただきます。
@@ -21,25 +41,27 @@ Drink MAGI
 Q1. つよさは？
 </p>
 <p>
-<input type="radio" name="q1" value="1">弱い
-<input type="radio" name="q1" value="3">ふつう
-<input type="radio" name="q1" value="5">強い
+<div class="row btn_group">
+    <div class="btn_selectable btn_active col align-middle"><label for="yowai" class="col"><input type="radio" class="d-none" name="q1" value="1" id="yowai">弱い</label></div>
+    <div class="btn_selectable col align-middle"><label for="ynt" class="col"><input type="radio" class="d-none" name="q1" value="3" id="ynt">ふつう</label></div>
+    <div class="btn_selectable col align-middle"><label for="tuyoi" class="col"><input type="radio" class="d-none" name="q1" value="5" id="tuyoi">強い</label></div>
+</div>
 </p>
 <p>
 Q2. 味は？
 </p>
 <p>
-<input type="radio" name="q2" value="1">甘い
-<input type="radio" name="q2" value="3">ふつう
-<input type="radio" name="q2" value="5">辛い
+<label for="amai"><input type="radio" class="d-none" name="q2" value="1" id="amai">甘い</label>
+<label for="fu"><input type="radio" class="d-none" name="q2" value="3" id="fu">ふつう</label>
+<label for="karai"><input type="radio" class="d-none" name="q2" value="5" id="karai">辛い</label>
 </p>
 <p>
 Q3. 後味は？
 </p>
 <p>
-<input type="radio" name="q3" value="1">キリッと
-<input type="radio" name="q3" value="3">ふつう
-<input type="radio" name="q3" value="5">まったり
+<label for="kiri"><input type="radio" class="d-none" name="q3" value="1" id="kiri">キリッと</label>
+<label for="futuu"><input type="radio" class="d-none" name="q3" value="3" id="futuu">ふつう</label>
+<label for="mattari"><input type="radio" class="d-none" name="q3" value="5" id="mattari">まったり</label>
 </p>
 <p>
 <input type="submit" value="送信" class="btn btn-success">
