@@ -30,7 +30,7 @@ Drink MAGI
 </head>
 <body class="container">
 <p class="text-center">
-あなたにおすすめの飲み物を解析します
+あなたにおすすめの{{ $ireul->name }}を解析します
 </p>
 <p>
 <br>これからいくつかの質問に答えていただきます。
@@ -38,34 +38,34 @@ Drink MAGI
 </p>
 <p>
 <form role="form" method="post" action="/ireuls/1/result">
-Q1. つよさは？
+Q1. 味は？
 </p>
 <p>
 
 <div class="row btn_group" id="first">
-    <div class="btn_selectable col align-middle"><label for="yowai" class="col"><input type="radio" class="d-none" name="q1" value="1" id="yowai" onclick="changeQ1Active(this)">弱い</label></div>
+    <div class="btn_selectable col align-middle"><label for="yowai" class="col"><input type="radio" class="d-none" name="q1" value="1" id="yowai" onclick="changeQ1Active(this)">{{ $ireul->q1_plus }}</label></div>
     <div class="btn_selectable col align-middle"><label for="ynt" class="col"><input type="radio" class="d-none" name="q1" value="3" id="ynt" onclick="changeQ1Active(this)">ふつう</label></div>
-    <div class="btn_selectable col align-middle"><label for="tuyoi" class="col"><input type="radio" class="d-none" name="q1" value="5" id="tuyoi" onclick="changeQ1Active(this)">強い</label></div>
+    <div class="btn_selectable col align-middle"><label for="tuyoi" class="col"><input type="radio" class="d-none" name="q1" value="5" id="tuyoi" onclick="changeQ1Active(this)">{{ $ireul->q1_minus }}</label></div>
 </div>
 </p>
 <p>
-Q2. 味は？
+Q2. 後味は？
 </p>
 <p>
 <div class="row btn_group" id="second">
-    <div class="btn_selectable col align-middle"><label for="amai" class="col"><input type="radio" class="d-none" name="q2" value="1" id="amai" onclick="changeQ2Active(this)">甘い</label></div>
+    <div class="btn_selectable col align-middle"><label for="amai" class="col"><input type="radio" class="d-none" name="q2" value="1" id="amai" onclick="changeQ2Active(this)">{{ $ireul->q2_plus }}</label></div>
     <div class="btn_selectable col align-middle"><label for="fu" class="col"><input type="radio" class="d-none" name="q2" value="3" id="fu" onclick="changeQ2Active(this)">ふつう</label></div>
-    <div class="btn_selectable col align-middle"><label for="karai" class="col"><input type="radio" class="d-none" name="q2" value="5" id="karai" onclick="changeQ2Active(this)">辛い</label></div>
+    <div class="btn_selectable col align-middle"><label for="karai" class="col"><input type="radio" class="d-none" name="q2" value="5" id="karai" onclick="changeQ2Active(this)">{{ $ireul->q2_minus }}</label></div>
 </div>
 </p>
 <p>
-Q3. 後味は？
+Q3. 存在は？
 </p>
 <p>
 <div class="row btn_group" id="third">
-    <div class="btn_selectable col align-middle"><label for="kiri" class="col"><input type="radio" class="d-none" name="q3" value="1" id="kiri" onclick="changeQ3Active(this)">キリッと</label></div>
+    <div class="btn_selectable col align-middle"><label for="kiri" class="col"><input type="radio" class="d-none" name="q3" value="1" id="kiri" onclick="changeQ3Active(this)">{{ $ireul->q3_plus }}</label></div>
     <div class="btn_selectable col align-middle"><label for="futuu" class="col"><input type="radio" class="d-none" name="q3" value="3" id="futuu" onclick="changeQ3Active(this)">ふつう</label></div>
-    <div class="btn_selectable col align-middle"><label for="mattari" class="col"><input type="radio" class="d-none" name="q3" value="5" id="mattari" onclick="changeQ3Active(this)">まったり</label></div>
+    <div class="btn_selectable col align-middle"><label for="mattari" class="col"><input type="radio" class="d-none" name="q3" value="5" id="mattari" onclick="changeQ3Active(this)">{{ $ireul->q3_minus }}</label></div>
 </div>
 </p>
 <p>
