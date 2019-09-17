@@ -37,7 +37,7 @@ Drink MAGI
 <br>質問は三択です。選択し終わったら、最後に送信ボタンを押してください。
 </p>
 <p>
-<form role="form" method="post" action="/ireuls/1/result">
+<form role="form" method="post" action="{{'/ireuls/'.$ireul->id.'/result'}}">
 Q1. つよさは？
 </p>
 <p>

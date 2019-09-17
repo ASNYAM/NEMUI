@@ -13,4 +13,4 @@
 
 Route::get('/', 'IreulController@index');
 Route::resource('ireuls','IreulController', ['except' => ['edit', 'destroy', 'update']]);
-Route::post('ireuls/{id}/result', 'IreulController@result');
+Route::post('ireuls/{id}/result', 'IreulController@result')->name('ireuls.result');
