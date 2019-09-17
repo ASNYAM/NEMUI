@@ -104,7 +104,7 @@ class IreulController extends Controller
         if($request->q1 === NULL || $request->q2 === NULL || $request->q3 === NULL){
             $data = \App\Iroul::find($id);
             if(null == $data){
-                abort(404);
+                abort(400);
             }
             // message飛ばす
             return view('ireul/show',[
