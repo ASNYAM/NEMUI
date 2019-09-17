@@ -52,9 +52,9 @@ Q2. 味は？
 </p>
 <p>
 <div class="row btn_group">
-    <div class="btn_selectable col align-middle"><label for="amai"><input type="radio" class="d-none" name="q2" value="1" id="amai">甘い</label></div>
-    <div class="btn_selectable col align-middle"><label for="fu"><input type="radio" class="d-none" name="q2" value="3" id="fu">ふつう</label></div>
-    <div class="btn_selectable col align-middle"><label for="karai"><input type="radio" class="d-none" name="q2" value="5" id="karai">辛い</label></div>
+    <div class="btn_selectable col align-middle"><label for="amai" class="col"><input type="radio" class="d-none" name="q2" value="1" id="amai">甘い</label></div>
+    <div class="btn_selectable col align-middle"><label for="fu" class="col"><input type="radio" class="d-none" name="q2" value="3" id="fu">ふつう</label></div>
+    <div class="btn_selectable col align-middle"><label for="karai" class="col"><input type="radio" class="d-none" name="q2" value="5" id="karai">辛い</label></div>
 </div>
 </p>
 <p>
@@ -62,9 +62,9 @@ Q3. 後味は？
 </p>
 <p>
 <div class="row btn_group">
-    <div class="btn_selectable col align-middle"><label for="kiri"><input type="radio" class="d-none" name="q3" value="1" id="kiri">キリッと</label></div>
-    <div class="btn_selectable col align-middle"><label for="futuu"><input type="radio" class="d-none" name="q3" value="3" id="futuu">ふつう</label></div>
-    <div class="btn_selectable col align-middle"><label for="mattari"><input type="radio" class="d-none" name="q3" value="5" id="mattari">まったり</label></div>
+    <div class="btn_selectable col align-middle"><label for="kiri" class="col"><input type="radio" class="d-none" name="q3" value="1" id="kiri">キリッと</label></div>
+    <div class="btn_selectable col align-middle"><label for="futuu" class="col"><input type="radio" class="d-none" name="q3" value="3" id="futuu">ふつう</label></div>
+    <div class="btn_selectable col align-middle"><label for="mattari" class="col"><input type="radio" class="d-none" name="q3" value="5" id="mattari">まったり</label></div>
 </div>
 </p>
 <p>
