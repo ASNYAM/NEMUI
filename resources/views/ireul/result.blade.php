@@ -15,7 +15,7 @@ Drink MAGI
   <p>あなたへのオススメは!</p>
   <div>
     <p style="font-size:2em;">{{ $names[rand(0,$lengh - 1)] }}</p>
-    <p>適合率:{{ $matchRate }}%</p>
+    <p>シンクロ率:{{ $matchRate }}%</p>
   </div>
 </div>
 </body>
