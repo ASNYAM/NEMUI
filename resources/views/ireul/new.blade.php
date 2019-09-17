@@ -20,6 +20,7 @@ MAGI SYSTEM
             <input type="file" name="csv">
 
             <p class="card-text">評価軸1</p>
+            <input type="text" name="q1_title" placeholder="例:甘い？苦い？" class="form-control">
             <div class="row">
                 <div class="col">
                     <input type="text" name="q1_plus" placeholder="例:甘い" class="form-control">
@@ -29,7 +30,8 @@ MAGI SYSTEM
                 </div>
             </div>
 
-            <p class="card-text">評価軸1</p>
+            <p class="card-text">評価軸2</p>
+            <input type="text" name="q2_title" placeholder="例:甘い？苦い？" class="form-control">
             <div class="row">
                 <div class="col">
                     <input type="text" name="q2_plus" placeholder="例:甘い" class="form-control">
@@ -40,6 +42,7 @@ MAGI SYSTEM
             </div>
 
             <p class="card-text">評価軸3</p>
+            <input type="text" name="q3_title" placeholder="例:甘い？苦い？" class="form-control">
             <div class="row">
                 <div class="col">
                     <input type="text" name="q3_plus" placeholder="例:キリッと" class="form-control">

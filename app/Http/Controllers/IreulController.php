@@ -42,10 +42,13 @@ class IreulController extends Controller
         //
         $ireul = new \App\Iroul;
         $ireul->name = $request->name;
+        $ireul->q1_title = $request->q1_title;
         $ireul->q1_plus = $request->q1_plus;
         $ireul->q1_minus = $request->q1_minus;
+        $ireul->q2_title = $request->q2_title;
         $ireul->q2_plus = $request->q2_plus;
         $ireul->q2_minus = $request->q2_minus;
+        $ireul->q3_title = $request->q3_title;
         $ireul->q3_plus = $request->q3_plus;
         $ireul->q3_minus = $request->q3_minus;
 

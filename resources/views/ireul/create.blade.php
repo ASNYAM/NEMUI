@@ -11,5 +11,8 @@ MAGI SYSTEM
 <body class="container">
 </body>
     <h1>MAGIシステムにより導きメソッドの作成が承認され、診断ページが作成されました！</h1>
-    <a href="/ireuls/{{$id}}">確認する</a>
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-success" href="/ireuls/{{$id}}">確認する</a>
+    </div>
+    
 </html>
