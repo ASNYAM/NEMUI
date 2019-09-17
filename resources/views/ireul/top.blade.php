@@ -20,7 +20,9 @@ Drink MAGI
                 <div class="card">
                     <div class="card-body">
                         <p class="card-title">{{$ireul['name']}}</p>
-                        <a href="ireuls/{{$ireul['id']}}" class="btn btn-primary stretched-link">みてみる</a>
+                        <div class="d-flex justify-content-end">
+                            <a href="ireuls/{{$ireul['id']}}" class="btn btn-primary stretched-link">みてみる</a>
+                        </div>
                     </div>
                 </div>
             </div>
