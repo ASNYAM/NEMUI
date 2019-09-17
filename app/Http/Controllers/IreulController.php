@@ -139,7 +139,7 @@ class IreulController extends Controller
         }
 
         return view('ireul/result',[
-            'title' => $iroul->name
+            'id' => $id
             , 'names' => $resultName
             , 'matchRate' => $matchRate
             , 'lengh' => count($resultName)]);
