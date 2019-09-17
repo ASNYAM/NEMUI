@@ -91,7 +91,13 @@ class IreulController extends Controller
      */
     public function show($id)
     {
-        return view('ireul/show');
+        $data = \App\Iroul::find($id);
+        if(null == $data){
+            abort(404);
+        }
+        return view('ireul/show',[
+            'ireul' => $data
+        ]);
     }
     public function result($id, Request $request)
     {
