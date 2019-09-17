@@ -11,8 +11,8 @@ Drink MAGI
 <body class="container">
     <form role="form" method="post" action="/ireuls"  enctype="multipart/form-data">
         @csrf
+        <h1>MAGIシステムを使っておすすめを導き出すサービスを公開しましょう！</h1>
         <div class="card">
-            <p class="card-title">MAGIシステムを使っておすすめを導き出すサービスを公開しましょう！</p>
             <p class="card-text">導き出すもののジャンルは？</p>
             <input type="text" name="name" placeholder="例:飲み物" class="form-control">
 
@@ -49,9 +49,9 @@ Drink MAGI
                 </div>
             </div>
             
-
-            <input type="submit" value="送信" class="btn btn-success">
+            <input type="submit" value="送信" class="mt-3 btn btn-success">
         </div>
+        <a href="/" class="btn btn-link">戻る</a>
     </form>
 </body>
 </html>

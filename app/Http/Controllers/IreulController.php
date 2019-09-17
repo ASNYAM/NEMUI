@@ -14,7 +14,10 @@ class IreulController extends Controller
      */
     public function index()
     {
-        //
+        $data = \App\Iroul::select(['id', 'name'])->get();
+        return view('ireul/top', [
+            'ireuls' => $data
+        ]);
     }
 
     /**
@@ -88,7 +91,13 @@ class IreulController extends Controller
      */
     public function show($id)
     {
-        return view('ireul/show');
+        $data = \App\Iroul::find($id);
+        if(null == $data){
+            abort(404);
+        }
+        return view('ireul/show',[
+            'ireul' => $data
+        ]);
     }
     public function result($id, Request $request)
     {

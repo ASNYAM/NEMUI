@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IreulController@index');
 Route::resource('ireuls','IreulController', ['except' => ['edit', 'destroy', 'update']]);
 Route::post('ireuls/{id}/result', 'IreulController@result');

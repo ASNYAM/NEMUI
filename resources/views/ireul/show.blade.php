@@ -68,7 +68,10 @@ Q3. 後味は？
 </div>
 </p>
 <p>
-<input type="submit" value="送信" class="btn btn-success">
+<div class="d-flex justify-content-between">
+    <a href="/" class="btn btn-link">戻る</a>
+    <input type="submit" value="送信" class="btn btn-success">
+</div>
 </p>
 @csrf
 </form>
