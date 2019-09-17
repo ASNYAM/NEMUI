@@ -72,5 +72,6 @@ Q3. 後味は？
 </p>
 @csrf
 </form>
+<a href="/" class="btn btn-link">戻る</a>
 </body>
 </html>
