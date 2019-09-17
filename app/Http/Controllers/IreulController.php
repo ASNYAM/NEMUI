@@ -92,7 +92,37 @@ class IreulController extends Controller
     }
     public function result($id, Request $request)
     {
-        return view('ireul/result');
+        $TOTAL_SCORE = 15;
+
+        $value = 0;
+        $minValue = 1000; // 適当に大きな初期値
+        $matchRate = 0;
+        $resultName = [];
+
+        $iroul = \App\Iroul::find($id);
+        $items = $iroul->items;
+
+        foreach($items as $item){
+            $value += abs($request->q1 - $item->q1_score);
+            $value += abs($request->q2 - $item->q2_score);
+            $value += abs($request->q3 - $item->q3_score);
+            
+            if($minValue > $value){
+                $minValue = $value;
+                $resultName = [];
+                $matchRate = round(($TOTAL_SCORE - $value)/$TOTAL_SCORE * 100,2);
+                array_push($resultName,$item->name);
+            }else if($minValue === abs($value)){
+                array_push($resultName,$item->name);
+            }
+            $value = 0;
+        }
+
+        return view('ireul/result',[
+            'title' => $iroul->name
+            , 'names' => $resultName
+            , 'matchRate' => $matchRate
+            , 'lengh' => count($resultName)]);
     }
 
     /**
