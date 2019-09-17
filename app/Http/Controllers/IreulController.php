@@ -101,6 +101,17 @@ class IreulController extends Controller
     }
     public function result($id, Request $request)
     {
+        if($request->q1 === NULL || $request->q2 === NULL || $request->q3 === NULL){
+            $data = \App\Iroul::find($id);
+            if(null == $data){
+                abort(404);
+            }
+            // message飛ばす
+            return view('ireul/show',[
+                'ireul' => $data
+            ]);
+        }
+        
         $TOTAL_SCORE = 15;
 
         $value = 0;
